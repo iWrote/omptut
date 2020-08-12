@@ -7,20 +7,15 @@ V --> ~0.6V, NOW P' = ~0.4P
 
 HUGE POWER SAVING, SAME OUTPUT @ f/2 + f/2 = f
 
-
+_________________________________________________________________________________________________________________________________
 Also moore's law is failing
 
 And we're hitting a "power wall" as power consumption scales nearly quadratically with
 performance gains
 
-
-
 AUTOMATIC PARALLELISM DOESN'T WORK; HARD TO FIGURE OUT "PARALLELIZABILITY"
 
 eh making notes on a keyboard is boring :/
-
-
-https://www.youtube.com/watch?v=nE-xN4Bf8XI&list=PLLX-Q6B8xqZ8n8bwjGdzBJ25X2utwnoEG
 
 When working with PRNGs ensure that different threads pick seeds such that the sequences of numbers they get DO NOT INTERLEAVE; you'll be oversampling parts of your distribution. 
 This is non-trivial.
