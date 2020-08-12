@@ -1,0 +1,28 @@
+WHY PARALLEL PROGRAMMING IS RELEVANT (especially, with careful GPGPU offloading)
+
+one chip with f,C,V, P = CV^2f = (QVf) = (Wf) = P
+
+2 cores driven at f/2 freq, with system at 2.2C (2 cores + ~wires),
+V --> ~0.6V, NOW P' = ~0.4P
+
+HUGE POWER SAVING, SAME OUTPUT @ f/2 + f/2 = f
+
+
+Also moore's law is failing
+
+And we're hitting a "power wall" as power consumption scales nearly quadratically with
+performance gains
+
+
+
+AUTOMATIC PARALLELISM DOESN'T WORK; HARD TO FIGURE OUT "PARALLELIZABILITY"
+
+eh making notes on a keyboard is boring :/
+
+
+https://www.youtube.com/watch?v=nE-xN4Bf8XI&list=PLLX-Q6B8xqZ8n8bwjGdzBJ25X2utwnoEG
+
+When working with PRNGs ensure that different threads pick seeds such that the sequences of numbers they get DO NOT INTERLEAVE; you'll be oversampling parts of your distribution. 
+This is non-trivial.
+
+A cheaper solution is to have a common seed and pick (nthreads+id)th numbers aka a round-robin.
